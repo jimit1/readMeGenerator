@@ -46,7 +46,7 @@ You will need node.js to run this project
 
 ## Additional questions or comments
 
-Feel free to contact me on jimit1@gmail.com for further information about this project
+Feel free to contact me on my email for further information about this project
 
 ---
 
@@ -58,4 +58,4 @@ Feel free to contact me on jimit1@gmail.com for further information about this p
 
 ## Email to contact me:
 
-Not public
+jimit1@gmail.com

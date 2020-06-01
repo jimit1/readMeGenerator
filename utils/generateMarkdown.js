@@ -1,10 +1,3 @@
-// function generateMarkdown(data) {
-//   return `
-// # ${data.title}
-
-// `;
-// }
-
 const fs = require("fs");
 
 module.exports = (res, userEmail) => {

@@ -6,13 +6,26 @@ This project generates a quick README.md file based on user prompts on the comma
 
 ## Contents
 
-- How to install
-- How to use
-- Contributors (if applicable)
-- How to test
-- Additional questions or comments
-- Licenses
-- Email to contact me
+- [Motivation](#Motivation)
+- [How to install](#how-to-install)
+- [How to use](#how-to-use)
+- [Contributors](#contributors)
+- [How to test](#how-to-test)
+- [Additional questions or comments](#additional-questions-or-comments)
+- [Licenses](#licenses)
+- [Email to contact me](#email-to-contact-me)
+
+---
+
+## Motivation
+
+```
+AS A developer
+
+I WANT a README generator
+
+SO THAT I can easily put together a good README for a new project
+```
 
 ---
 
@@ -20,15 +33,15 @@ This project generates a quick README.md file based on user prompts on the comma
 
 Use `npm install` to install all the required dependencies
 
-![](./assets/npmInstall.gif)
+![How to install](./assets/npmInstall.gif)
 
 ---
 
-## Intended Usage
+## How to use
 
-You can use this project anywhere. It will generate a clean README.md file for any type of projects
+You can use this project anywhere. It will generate a clean **README.md** file for any type of projects
 
-![](./assets/use.gif)
+![How to use](./assets/use.gif)
 
 ---
 
@@ -40,7 +53,7 @@ Jim Mehta
 
 ## How to test
 
-You will need node.js to run this project
+You will need `node.js` to run this project
 
 ---
 
@@ -56,6 +69,6 @@ Feel free to contact me on my email for further information about this project
 
 ---
 
-## Email to contact me:
+## Email to contact me
 
 jimit1@gmail.com

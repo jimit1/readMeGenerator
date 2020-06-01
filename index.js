@@ -6,7 +6,7 @@ const questions = [
   "1. What is your Github username?",
   "2. What is the title of your project?",
   "3. Provide a brief description of your project?",
-  "4. Would you like to list anything in the table of contents?",
+  "4. What is your motivation for this project?",
   "5. Provide a description on how to install your project?",
   "6. Provide a breif description on how you use your project?",
   "7. What licenses are needed for your project?",
@@ -43,7 +43,7 @@ inquirer
       },
       {
         type: "input",
-        name: "table",
+        name: "motivation",
         message: `${questions[3]}`,
       },
       {

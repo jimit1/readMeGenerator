@@ -15,18 +15,22 @@ module.exports = (res, userEmail) => {
   ${res.description}
   ***
   ## Contents
-  - How to install 
-  - How to use
-  - Contributors (if applicable)
-  - How to test
-  - Additional questions or comments
-  - Licenses
-  - Email to contact me
+  - [Motivation](#Motivation)
+  - [How to install](#how-to-install)
+  - [How to use](#how-to-use)
+  - [Contributors](#contributors)
+  - [How to test](#how-to-test)
+  - [Additional questions or comments](#additional-questions-or-comments)
+  - [Licenses](#licenses)
+  - [Email to contact me](#email-to-contact-me)
+  ***
+  ## Motivation
+  ${res.motivation}
   ***
   ## How to install
   ${res.install}
   ***
-  ## Intended Usage
+  ## How to use
   ${res.use}
   ***
   ## Contributors

@@ -33,8 +33,8 @@ module.exports = (res, profileUrl) => {
   ${res.test}
   ***
   ## Additional questions or comments
-  ${profileUrl}
-  ${res.email}
+  My GitHub profile: ${profileUrl}  
+  My Email: ${res.email}  
   ${res.questions}
   ****
   ## Licenses

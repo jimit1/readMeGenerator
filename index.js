@@ -1,7 +1,8 @@
 const inquirer = require("inquirer");
 const api = require("./utils/api");
 const generateMarkdown = require("./utils/generateMarkdown");
-let userEmail;
+const axios = require("axios");
+let profileUrl;
 const questions = [
   "1. What is your Github username?",
   "2. What is the title of your project?",
@@ -13,6 +14,7 @@ const questions = [
   "8. List all people who have contributed to the project",
   "9. What will one need to test the project?",
   "10. Any additional questions or comments about the project?",
+  "11. What is your email id?",
 ];
 inquirer
   .prompt([
@@ -22,12 +24,11 @@ inquirer
       message: `${questions[0]}`,
     },
   ])
-  .then((res) => api(res.data))
   .then((res) => {
-    userEmail = res.data.email;
-    if (userEmail === null) {
-      userEmail = "Not public";
-    }
+    return api(res.name);
+  })
+  .then((res) => {
+    profileUrl = res.data.html_url;
   })
   .then(() =>
     inquirer.prompt([
@@ -84,6 +85,14 @@ inquirer
         name: "questions",
         message: `${questions[9]}`,
       },
+      {
+        type: "input",
+        name: "email",
+        message: `${questions[10]}`,
+      },
     ])
   )
-  .then((res) => generateMarkdown(res, userEmail));
+  .then((res) => generateMarkdown(res, profileUrl))
+  .catch((err) => {
+    if (err) throw err;
+  });

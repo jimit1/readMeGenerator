@@ -1,6 +1,6 @@
 const fs = require("fs");
 
-module.exports = (res, userEmail) => {
+module.exports = (res, profileUrl) => {
   return fs.writeFile(
     "README.md",
     `
@@ -33,13 +33,15 @@ module.exports = (res, userEmail) => {
   ${res.test}
   ***
   ## Additional questions or comments
+  ${profileUrl}
+  ${res.email}
   ${res.questions}
   ****
   ## Licenses
   ![license type](https://img.shields.io/badge/Licenses-${res.licenses}-red)
   ****
   ## Email to contact me
-  ${userEmail}
+  ${res.email}
   `,
     (err) => {
       if (err) throw err;

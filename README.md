@@ -59,6 +59,8 @@ You will need `node.js` to run this project
 
 ## Additional questions or comments
 
+My Github Profile - https://github.com/jimit1
+My Email - jimit1@gmail.com
 Feel free to contact me on my email for further information about this project
 
 ---
